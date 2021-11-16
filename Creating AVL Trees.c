@@ -101,9 +101,9 @@ struct Node * RLRotation(struct AVL *avl,struct Node *p)
 	pr->height=NodeHeight(pr);
 	prl->height=NodeHeight(prl);
 	
-	if(avl->root==p)
+	if(avl->root==p) {
 	    avl->root=prl;
-	
+    }
 	return(prl);
 }
 
